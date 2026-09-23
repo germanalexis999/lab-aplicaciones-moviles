@@ -41,8 +41,7 @@ class MainActivity : AppCompatActivity() {
         val btnIrSegunda = findViewById<Button>(R.id.btnIrSegunda)
         btnIrSegunda.setOnClickListener {
             val intent = Intent(this, SegundaActivity::class.java)
-            // Fallback por si 'perfil' no está implementado:
-            val datoNombre = try { perfil.apodo ?: perfil.nombre } catch (e: Exception) { "Visitante" }
+            val datoNombre = perfil.apodo ?: perfil.nombre
             intent.putExtra("nombre", datoNombre)
             startActivity(intent)
         }
