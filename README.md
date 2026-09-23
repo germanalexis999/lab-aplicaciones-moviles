@@ -1,1 +1,1 @@
-# lab-aplicaciones-mobiles-
+# lab-aplicaciones-moviles-
